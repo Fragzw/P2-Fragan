@@ -1,5 +1,41 @@
-h1 {
-   color: red;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+/* *= Wildcard Card (sélectionne tout) */
+* {
+   box-sizing: border-box; /* !!! Revoir cours */
+   font-family: "Raleway", "sans-serif", "arial";
+}
+/* Toujours indiquer une police de "secours" si Raleway pas prise en charge */
+
+/* Voir cours responsive et bordure (maquettes) */
+
+
+
+nav {
+   border: 1px solid red;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   flex-wrap: wrap;
+}
+
+/* Voir cours sur le padding et responsive*/
+
+nav a { /* Ainsi on sélectionne uniquement les "a" dans "nav" */
+   padding: 2rem;
+} 
+
+
+#logo {
+   margin-right: auto;
+   /* Mettre padding à gauche et à droite */
+   padding: 0 2rem;
+}
+
+
+a {
+   color: inherit;
+   text-decoration: none;
 }
 
 .contenu {
