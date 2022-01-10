@@ -19,6 +19,10 @@ nav {
    flex-wrap: wrap;
 }
 
+nav a:hover {
+   border-top: 3px solid #0065FC;
+}
+
 /* Voir cours sur le padding et responsive*/
 
 nav a { /* Ainsi on sélectionne uniquement les "a" dans "nav" */
@@ -29,7 +33,11 @@ nav a { /* Ainsi on sélectionne uniquement les "a" dans "nav" */
 #logo {
    margin-right: auto;
    /* Mettre padding à gauche et à droite */
-   padding: 0 2rem;
+   padding: 0 2rem; 
+}
+
+.hebergement{
+   color: #0065FC;
 }
 
 
