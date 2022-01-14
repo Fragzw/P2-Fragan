@@ -10,6 +10,7 @@
 /* Voir cours responsive et bordure (maquettes) */
 
 
+/* navbar */
 
 nav {
    border: 1px solid red;
@@ -29,6 +30,9 @@ nav a { /* Ainsi on sélectionne uniquement les "a" dans "nav" */
    padding: 2rem;
 } 
 
+nav img {
+   width: 180px;
+}
 
 #logo {
    margin-right: auto;
@@ -52,6 +56,107 @@ a {
    flex: 1 0 auto;
 }
 
+/* formulaire */
+
+.formulaire
+{
+    margin: 15px 0px 15px 0px;
+}
+.fa-map-marker-alt
+{
+    color: black;
+    position: absolute;
+    width: 10px;
+    margin: 10px 0px 0px 15px;
+}
+input[type=text] 
+{
+    padding: 10px;
+    font-family: 'Raleway-bold';
+    border: 1px solid #F2F2F2;
+    border-left: 40px solid #F2F2F2;
+    border-radius: 12px 0px 0px 12px; 
+}
+.rechercher
+{
+    padding: 10px;
+    border: 1px solid #0065FC; 
+    font-family: 'Raleway-bold';
+    background-color: #0065FC;
+    color : white;
+    border-radius: 0px 12px 12px 0px; 
+    transition: all 0.3s ease;
+    margin-left: -5px;
+}
+.rechercher:hover
+{
+    background-color: white;
+    color: #0065FC;
+}
+
+/* filtres */
+
+.filtres
+{
+    display: flex;
+    align-items: center;
+}
+.title_filtres
+{
+    font-family: 'Raleway-Bold';
+    font-size: 0.9rem;
+}
+.texte_filtres
+{
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 13px;
+    font-family: 'Raleway-Bold';
+}
+.filtres ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    white-space: nowrap;
+}
+.filtres li
+{
+    margin: 10px;
+    border: 2px solid #F2F2F2;
+    border-radius: 30px;
+}
+.filtres a
+{
+    margin: 0;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.fondbleu
+{
+    background-color: #DEEBFF;
+    border-radius: 40px;
+    height: 45px;
+    width: 45px;
+}
+.fa-dog, .fa-heart, .fa-child, .fa-money-bill-wave
+{
+    color: #0065FC;
+    margin: 13px;
+}
+.filtres a:hover
+{
+    background-color: #0065FC;
+    border-radius: 30px;
+    color:white;
+    box-shadow: 0px 0px 2px #0065FC;
+}
+
+
+/* footer */
 footer {
    flex-shrink: 0;
    border-top: 1px dashed #000;
@@ -118,4 +223,6 @@ footer {
       margin-top: 0;
    }
 }
+
+
 
