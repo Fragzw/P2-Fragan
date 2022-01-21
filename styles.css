@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
 
+:root {
+   --blue: #0065fc;
+   --darkgrey: #f9f9f9;
+   --lightgrey: #d9d9d9;
+   --lightblue: #deebff;
+   --lighterblue: #f3f8ff;
+}
+
 /* *= Wildcard Card (sélectionne tout) */
 * {
    box-sizing: border-box; /* !!! Revoir cours */
@@ -10,10 +18,9 @@
 /* Voir cours responsive et bordure (maquettes) */
 
 
-/* navbar */
+/* navbar (en-tête) */
 
 nav {
-   border: 1px solid red;
    display: flex;
    align-items: center;
    justify-content: flex-end;
@@ -21,14 +28,28 @@ nav {
 }
 
 nav a:hover {
-   border-top: 3px solid #0065FC;
+   border-top: 5px solid #0065FC;
 }
 
 /* Voir cours sur le padding et responsive*/
 
 nav a { /* Ainsi on sélectionne uniquement les "a" dans "nav" */
    padding: 2rem;
-} 
+}
+
+header nav div {
+   display: flex;
+   list-style-type: none;
+   margin: 0;
+}
+
+
+header nav div li {
+   padding: 50px 25px;
+   border-top: 4px solid transparent;
+   margin: 0px 20px 0px 20px;
+}
+
 
 nav img {
    width: 180px;
@@ -124,7 +145,7 @@ input[type=text]
 .filtres li
 {
     margin: 10px;
-    border: 2px solid #F2F2F2;
+    border: 3px solid #F2F2F2;
     border-radius: 30px;
 }
 .filtres a
@@ -155,6 +176,143 @@ input[type=text]
     box-shadow: 0px 0px 2px #0065FC;
 }
 
+/* message d'infos */
+
+.info {
+   display: flex;
+   align-items: center;
+}
+
+.info .fas {
+   color: #0065FC;
+   width: 2rem;
+   height: 2rem;
+   border: 1px solid var(--lightgrey);
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+/* hebergement */ 
+
+#hebergement {
+   display: flex;
+   justify-content: space-between;
+   background-color: #f2f2f2;
+}
+
+#hebergement section h2 {
+   margin-top: 0px;
+}
+
+#hebergement section .container {
+   background-color: var(--grey);
+   padding: 20px 20px 10px 20px;
+   border-radius: 20px;
+   height: calc(100% - 120px);
+   box-sizing: content-box;
+}
+
+.hebergement-list {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.hebergement-list a {
+   width: 30%;
+   margin-bottom: 50px;
+}
+
+.hebergement-list a article {
+   background-color: white;
+   padding: 6px;
+   border-radius: 25px;
+   height: 100%;
+}
+
+.hebergement-list a article:hover {
+   box-shadow: 5px 5px 5px 0px #E2E2E2;
+}
+
+.hebergement-list a article .fa-star.blue {
+   color: var(--blue);
+}
+
+.hebergement-list a article .fa-star.grey {
+   color: var(--lightgrey);
+}
+
+.hebergement-list a article img {
+   width: 100%;
+   height: 200px;
+   border-radius: 25px 25px 0px 0px;
+   object-fit: cover;
+}
+
+.hebergement-list a {
+   color: black;
+   text-decoration: none;
+}
+
+.hebergement-list a article .article-content {
+   padding: 10px 10px 0px 10px;
+}
+
+.hebergement-list a article .article-content h3,
+.hebergement-list a article .article-content p {
+   margin: 6px;
+}
+
+.hebergement-list a article .article-content .price.bold {
+   font-weight: bold;
+}
+
+/* Activités */
+
+
+
+#activite {
+   margin-bottom: 60px;
+   ;
+}
+
+.activite-list {
+   display: flex;
+   justify-content: space-between;
+   height: 600px;
+}
+
+.activite-list .column {
+   width: 23%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   border-radius: 25px;
+}
+
+.activite-list .column article img {
+   width: 100%;
+   height: calc(100% - 67px);
+   object-fit: cover;
+   border-radius: 25px 25px 0px 0px;
+}
+
+.activite-list .column article {
+   height: 100%;
+   box-shadow: 0px 0px 10px 0px #E0E0E0;
+   border-radius: 25px;
+}
+
+.activite-list .column article h3 {
+   padding: 21px;
+   margin: 0px;
+}
+
+.activite-list .column.double article {
+   height: 48%;
+}
 
 /* footer */
 footer {
@@ -223,6 +381,3 @@ footer {
       margin-top: 0;
    }
 }
-
-
-
